@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ui-system/s-radio/s-radio-group s-radio-group отображается 1`] = `<div role="group" aria-label="radio-group" class="s-radio-group"></div>`;

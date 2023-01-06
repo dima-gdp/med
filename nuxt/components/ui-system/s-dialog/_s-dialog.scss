@@ -1,0 +1,161 @@
+.s-dialog {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  &__center & {
+    &__header,
+    &__content,
+    &__footer {
+      text-align: center;
+    }
+  }
+
+  &__scroll & {
+    &__content {
+      max-height: calc(80vh - 200px);
+      overflow: auto;
+    }
+  }
+
+  &__full-screen & {
+    &__wrap {
+      width: calc(100% - 30px);
+      height: calc(100% - 30px);
+      max-width: none;
+      max-height: none;
+    }
+  }
+
+  &__auto-width & {
+    &__wrap {
+      width: auto;
+      min-width: auto;
+      max-width: initial;
+    }
+  }
+
+  &__close-btn {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 20px;
+    top: 20px;
+    border: none;
+    background: none;
+    border-radius: 0px;
+    padding: 0px;
+    transition: all 0.25s ease;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__wrap {
+    position: relative;
+    background: #fff;
+    transition: all 0.25s ease;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0px 10px 50px rgba(148, 169, 183, 0.25);
+    border-radius: 20px;
+    padding-bottom: 40px;
+  }
+  &__header {
+    padding: 33px 40px 13px 40px;
+  }
+  &__content {
+    padding: 0px 40px;
+  }
+  &__footer {
+    border-top: 1px solid #edf1f7;
+    padding: 16px 40px;
+  }
+  &__loading {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: inherit;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 21;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    @include heading-3;
+  }
+  &__mask {
+    position: absolute;
+    background: #252d33;
+    opacity: 0.95;
+    width: 100%;
+    height: 100%;
+  }
+  &__close-icon {
+    color: $color-main-kiwi-green;
+    font-size: 22px;
+    &:hover {
+      color: $color-status-green-active;
+    }
+    &:focus {
+      color: $color-status-green-active;
+    }
+  }
+
+  &--ver-modal {
+    .s-dialog__wrap {
+      width: 300px;
+      @include adaptive-style([ 'padding-bottom' ], 23px, 34px, 42px);
+      @include media-breakpoint-up(md) {
+        width: 595px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        width: 711px;
+      }
+    }
+
+    .s-dialog__content {
+      @include adaptive-style([ 'padding' ], 0 14px, 0 28px 0 40px, 0 40px);
+    }
+
+    .s-dialog__header {
+      @include adaptive-style(
+        [ 'padding' ],
+        18px 50px 18px 16px,
+        33px 55px 18px 40px,
+        33px 55px 11px 40px
+      );
+    }
+
+    .s-dialog__close-btn {
+      @include adaptive-style([ 'right' ], 6px, 16px, 16px);
+      @include adaptive-style([ 'top' ], 6px, 16px, 16px);
+    }
+    .s-dialog__close-icon {
+      font-size: 37px;
+    }
+  }
+}
+.modal-enter-active,
+.modal-leave-active {
+  transition: opacity 300ms cubic-bezier(0.64, 0.04, 0.35, 1);
+}
+.modal-enter,
+.modal-leave-to {
+  opacity: 0;
+}

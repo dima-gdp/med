@@ -1,0 +1,38 @@
+.forget-page {
+  min-height: 50vh;
+  padding-top: 25px;
+  margin-bottom: 75px;
+  @include media-breakpoint-up(md) {
+    padding-top: 40px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 65px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__description {
+    font-size: 16px;
+    max-width: 720px;
+    line-height: 24px;
+    margin-bottom: 26px;
+  }
+  &__bg {
+    background: #f3f7f9;
+    position: fixed;
+    z-index: -1;
+    overflow: hidden;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  &__btn-block {
+    margin-top: 24px;
+  }
+  &__form-block {
+    max-width: 585px;
+  }
+  &__come-back-block {
+    margin-bottom: 20px;
+  }
+}

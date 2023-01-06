@@ -1,0 +1,23 @@
+.rating {
+  position: relative;
+  background: $color-neutral-snow-white;
+  border-radius: 12px;
+  padding: 68px 12px 30px 12px;
+
+  @include media-breakpoint-up(md) {
+    padding: 93px 16px 40px 16px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding: 69px 24px 45px 24px;
+  }
+
+  .rating__tabs .s-tabs__nav {
+    position: absolute;
+    top: -20px;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+  }
+}

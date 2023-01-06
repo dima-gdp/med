@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/png" href="/static/favicon/favicon-prod-client32x32.png" />
+    <title>Что-то пошло не так</title>
+
+    <style>
+      @font-face {
+        font-family: 'PT-Root-UI';
+        font-weight: 500 700;
+        src: url('/static/fonts/PT-Root-UI_Bold.woff2') format('woff2'),
+          url('fonts/PT-Root-UI_Bold.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'PT-Root-UI';
+        font-weight: 400;
+        src: url('/static/fonts/PT-Root-UI_Regular.woff2') format('woff2'),
+          url('/static/fonts/PT-Root-UI_Regular.woff') format('woff');
+      }
+      body {
+        margin: 0;
+      }
+      .body {
+        height: 100vh;
+        background: #252d33;
+        color: #94a9b7;
+        font-family: 'PT-Root-UI', sans-serif;
+        font-weight: 400;
+        overflow-y: hidden;
+      }
+
+      .container {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 792px;
+      }
+      @media (max-width: 991px) {
+        .container {
+          max-width: 792px;
+        }
+      }
+      @media (max-width: 767px) {
+        .container {
+          max-width: 300px;
+        }
+      }
+
+      .header {
+        padding-top: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .content {
+        margin-top: 115px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      @media (max-width: 991px) {
+        .content {
+          margin-top: 105px;
+        }
+      }
+      @media (max-width: 767px) {
+        .content {
+          margin-top: 50px;
+        }
+      }
+      .content__error-code {
+        color: #fff;
+      }
+      .content__title {
+        margin: 0;
+        text-align: center;
+      }
+      .content__description {
+        margin-top: 52px;
+        text-align: center;
+      }
+      @media (max-width: 991px) {
+        .content__description {
+          margin-top: 41px;
+        }
+      }
+      @media (max-width: 767px) {
+        .content__description {
+          margin-top: 25px;
+        }
+      }
+      .sp-e-code {
+        font-family: 'PT-Root-UI', sans-serif;
+        font-weight: 700;
+        font-size: 110px;
+        line-height: 110px;
+      }
+      @media (min-width: 768px) {
+        .sp-e-code {
+          font-size: 180px;
+          line-height: 180px;
+        }
+      }
+      @media (min-width: 1260px) {
+        .sp-e-code {
+          font-size: 250px;
+          line-height: 220px;
+        }
+      }
+
+      .sp-b-h {
+        font-family: 'PT-Root-UI', sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 42px;
+      }
+      @media (min-width: 768px) {
+        .sp-b-h {
+          font-size: 48px;
+          line-height: 56px;
+        }
+      }
+      @media (min-width: 1260px) {
+        .sp-b-h {
+          font-size: 60px;
+          line-height: 68px;
+        }
+      }
+
+      .t-p {
+        font-family: 'PT-Root-UI', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+      }
+      @media (min-width: 768px) {
+        .t-p {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+      @media (min-width: 1260px) {
+        .t-p {
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <div class="container">
+        <div class="error">
+          <header class="layout__header header">
+            <a href="/">
+              <img src="/static/svg/logo.svg" alt="logo" class="header__img" />
+            </a>
+          </header>
+          <main class="layout__content content">
+            <div class="content__error-code sp-e-code">500</div>
+            <h1 class="content__title sp-b-h">Что-то пошло не так</h1>
+            <div class="content__description t-p">
+              Произошла непредвиденная ошибка. Мы уже занимаемся её исправлением. Подождите
+              несколько минут и обновите страницу.
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

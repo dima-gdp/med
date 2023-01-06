@@ -1,0 +1,510 @@
+@mixin font-regular {
+  font-family: 'PT-Root-UI', sans-serif;
+  font-weight: 400;
+}
+
+@mixin font-bold {
+  font-family: 'PT-Root-UI', sans-serif;
+  font-weight: 700;
+}
+
+@mixin outline-digits {
+  font-family: 'OutlineDigits', sans-serif;
+  font-weight: normal;
+}
+
+/* Headlines */
+@mixin heading-1 {
+  @include font-bold;
+
+  font-size: 30px;
+  line-height: 1.2;
+
+  @include media-breakpoint-up(md) {
+    font-size: 40px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 48px;
+  }
+}
+
+@mixin heading-2 {
+  @include font-bold;
+
+  font-size: 26px;
+  line-height: 1.2;
+
+  @include media-breakpoint-up(md) {
+    font-size: 32px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 36px;
+  }
+}
+
+@mixin heading-3 {
+  @include font-bold;
+
+  font-size: 22px;
+  line-height: 26px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@mixin heading-4 {
+  @include font-bold;
+
+  font-size: 18px;
+  line-height: 22px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
+@mixin heading-5 {
+  @include font-bold;
+
+  font-size: 14px;
+  line-height: 18px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@mixin heading-6 {
+  @include font-bold;
+
+  font-size: 10px;
+  line-height: 14px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    // такой же как и tablet
+  }
+}
+
+/* Text */
+
+@mixin text-paragraph() {
+  @include font-regular;
+
+  font-size: 14px;
+  line-height: 22px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@mixin text-comment() {
+  @include font-regular;
+
+  font-size: 12px;
+  line-height: 18px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@mixin text-bold-link {
+  @include font-bold;
+
+  font-size: 14px;
+  line-height: 22px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@mixin text-special {
+  @include font-regular();
+
+  font-size: 14px;
+  line-height: 22px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
+/* Addition */
+
+@mixin text-menu {
+  @include font-regular;
+
+  font-size: 18px;
+  line-height: 36px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 18px;
+    line-height: 36px;
+  }
+}
+
+@mixin text-menu-category {
+  @include font-bold;
+
+  font-size: 18px;
+  line-height: 36px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 18px;
+    line-height: 36px;
+  }
+}
+
+@mixin text-person {
+  @include font-bold;
+
+  font-size: 10px;
+  line-height: 12px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@mixin text-tag {
+  @include font-bold;
+
+  font-size: 10px;
+  line-height: 12px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@mixin text-error-message {
+  @include font-regular;
+
+  font-size: 10px;
+  line-height: 14px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@mixin text-dropdown-menu {
+  @include font-regular;
+
+  font-size: 14px;
+  line-height: 32px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+    line-height: 36px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 18px;
+    line-height: 40px;
+  }
+}
+
+@mixin text-dropdown-menu-tag {
+  @include font-regular;
+
+  font-size: 14px;
+  line-height: 24px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 18px;
+    line-height: 40px;
+  }
+}
+
+/* Special */
+
+@mixin special-hero-headline {
+  @include font-bold;
+
+  font-size: 40px;
+  line-height: 46px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 64px;
+    line-height: 68px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 92px;
+    line-height: 96px;
+  }
+}
+
+@mixin special-big-headline {
+  @include font-bold;
+
+  font-size: 32px;
+  line-height: 42px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 60px;
+    line-height: 68px;
+  }
+}
+
+@mixin special-micro-headliner {
+  @include font-bold;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  font-size: 10px;
+  line-height: 18px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@mixin special-micro-headliner-alternative {
+  @include font-bold;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  font-size: 8px;
+  line-height: 16px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@mixin special-mammoth {
+  @include font-bold;
+
+  font-size: 72px;
+  line-height: 80px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 100px;
+    line-height: 106px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 135px;
+    line-height: 135px;
+  }
+}
+
+@mixin special-tabs {
+  @include font-bold;
+
+  font-size: 14px;
+  line-height: 14px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+@mixin special-tips {
+  @include font-regular;
+
+  font-size: 12px;
+  line-height: 16px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@mixin special-error-code {
+  @include font-bold;
+  font-size: 110px;
+  line-height: 110px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 180px;
+    line-height: 180px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 250px;
+    line-height: 220px;
+  }
+}
+
+/* Card */
+
+@mixin card-date {
+  @include font-regular;
+
+  font-size: 18px;
+  line-height: 28px;
+}
+
+@mixin card-date-compress {
+  @include font-regular;
+
+  font-size: 12px;
+  line-height: 16px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@mixin card-timer {
+  @include font-bold;
+
+  font-size: 10px;
+  line-height: 16px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+
+@mixin card-timer-compresses {
+  @include font-bold;
+
+  font-size: 10px;
+  line-height: 16px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}

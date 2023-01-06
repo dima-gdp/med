@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'PT-Root-UI';
+  font-weight: 500 700;
+  src: url('~/assets/fonts/PT-Root-UI_Bold.woff2') format('woff2'),
+    url('~/assets/fonts/PT-Root-UI_Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PT-Root-UI';
+  font-weight: 400;
+  src: url('~/assets/fonts/PT-Root-UI_Regular.woff2') format('woff2'),
+    url('~/assets/fonts/PT-Root-UI_Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'OutlineDigits';
+  font-style: normal;
+  font-weight: normal;
+  // text-rendering: optimizeLegibility;
+  src: url('~/assets/fonts/outline-digits-font/OutlineDigits-Bold.woff2') format('woff2'),
+    url('~/assets/fonts/outline-digits-font/OutlineDigits-Bold.woff') format('woff');
+}

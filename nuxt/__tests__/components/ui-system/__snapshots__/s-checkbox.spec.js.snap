@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ui-system/s-checkbox s-checkbox отображается 1`] = `
+<div class="s-checkbox">
+  <div class="s-checkbox__box"><input type="checkbox" class="s-checkbox__input" value="false">
+    <div class="s-checkbox__mask">
+      <!---->
+    </div>
+  </div> <label for="" class="visually-hidden">
+
+  </label>
+</div>
+`;

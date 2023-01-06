@@ -1,0 +1,23 @@
+.order-list-page {
+  padding-top: 67px;
+  padding-bottom: 67px;
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__list-month {
+    &:not(:last-child) {
+      margin-bottom: 97px;
+    }
+  }
+  &__title-month {
+    margin-bottom: 15px;
+  }
+  &__item-order + &__item-order {
+    margin-top: 32px;
+  }
+
+  &__btn-block {
+    text-align: center;
+    margin-top: 71px;
+  }
+}

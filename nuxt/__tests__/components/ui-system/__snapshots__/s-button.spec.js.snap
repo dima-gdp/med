@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ui-system/s-button ui-button отображается 1`] = `<button class="t-b-l s-btn s-btn--c-green s-btn--t-solid"><span class="s-btn__content d-f f-c"></span></button>`;

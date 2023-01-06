@@ -1,0 +1,57 @@
+$color-main-kiwi-green: #40b526;
+$color-main-sea-green: #77be80;
+$color-main-king-blue: #3b64a1;
+$color-main-queen-blue: #628bc7;
+
+/* neutral */
+$color-neutral-cobalt-black: #252d33;
+$color-neutral-cool-grey: #94a9b7;
+$color-neutral-ice-grey: #d1dce2;
+$color-neutral-pale-grey: #f3f7f9;
+$color-neutral-snow-white: #fff;
+
+/* alert */
+$color-alert-success-green: #40b526;
+$color-alert-warning-yellow: #fbbc05;
+$color-alert-danger-red: #df362a;
+$color-alert-system-blue: #27a8c2;
+$color-alert-pale-success: #cfecc8;
+$color-alert-pale-warning: #fdeab4;
+$color-alert-pale-danger: #f5c2bf;
+$color-alert-pale-system: #c8e9ef;
+
+/* status */
+$color-status-green-hover: #66df3c;
+$color-status-blue-hover: #4484ff;
+$color-status-yellow-hover: #ffd456;
+$color-status-green-active: #287617;
+$color-status-blue-active: #26447e;
+$color-status-yellow-active: #d08900;
+
+/* gradient */
+
+$gradient-corporate-gradient: linear-gradient(90deg, #3b64a1 0%, #2fb9b6 48.96%, #40b526 100%);
+
+$main-colors: (
+  'kiwi-green': $color-main-kiwi-green,
+  'sea-green': $color-main-sea-green,
+  'king-blue': $color-main-king-blue,
+  'queen-blue': $color-main-queen-blue,
+  'cobalt-black': $color-neutral-cobalt-black,
+  'cool-grey': $color-neutral-cool-grey,
+  'ice-grey': $color-neutral-ice-grey,
+  'pale-grey': $color-neutral-pale-grey,
+  'snow-white': $color-neutral-snow-white,
+  'success-green': $color-alert-success-green,
+  'warning-yellow': $color-alert-warning-yellow,
+  'danger-red': $color-alert-danger-red,
+  'system-blue': $color-alert-system-blue,
+  'pale-success': $color-alert-pale-success,
+  'pale-warning': $color-alert-pale-warning,
+  'pale-danger': $color-alert-pale-danger,
+  'pale-system': $color-alert-pale-system,
+  'status-green-hover': $color-status-green-hover,
+  'status-blue-hover': $color-status-blue-hover,
+  'status-green-active': $color-status-green-active,
+  'status-blue-active': $color-status-blue-active,
+);

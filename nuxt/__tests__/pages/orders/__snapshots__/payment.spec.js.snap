@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/orders/payment Snapshot при статусе payment = created 1`] = `
+<div class="payment-page">
+  <div class="payment-page__content container">
+    <div class="payment-page__header">
+      <nuxt-link-stub to="/"><img src="~/assets/svg/logo.svg" alt="logo"></nuxt-link-stub>
+    </div>
+    <!---->
+    <div class="payment-page__body">
+      <div class="payment-page__image-block"><img src="~assets/images/payment-page/card-break.png" alt="card"></div>
+      <h1 class="payment-page__title h-1">Не удалось оплатить</h1>
+      <div class="payment-page__description">
+        Что-то пошло не&nbsp;так, и&nbsp;мы&nbsp;не&nbsp;смогли принять оплату за «undefined». Пожалуйста, попробуйте оплатить его снова, или свяжитесь с&nbsp;нашим менеджером по&nbsp;номеру 8&nbsp;800&nbsp;500 26&nbsp;92
+      </div>
+      <div class="payment-page__btn-block"><a href="https://yoomoney.ru/payments/external/confirmation?orderId=28ada05a-000f-5000-8000-158e10067e04" target="_blank" class="payment-page__btn t-b-l s-btn s-btn--c-green s-btn--t-solid"><span class="s-btn__content d-f f-c">Попытаться оплатить снова</span></a></div>
+    </div>
+  </div>
+  <div class="payment-page__bg"></div>
+</div>
+`;
+
+exports[`pages/orders/payment Snapshot при статусе payment = failed 1`] = `
+<div class="payment-page">
+  <div class="payment-page__content container">
+    <div class="payment-page__header">
+      <nuxt-link-stub to="/"><img src="~/assets/svg/logo.svg" alt="logo"></nuxt-link-stub>
+    </div>
+    <!---->
+    <div class="payment-page__body">
+      <div class="payment-page__image-block"><img src="~assets/images/payment-page/card-break.png" alt="card"></div>
+      <h1 class="payment-page__title h-1">Не удалось оплатить</h1>
+      <div class="payment-page__description">
+        Что-то пошло не&nbsp;так, и&nbsp;мы&nbsp;не&nbsp;смогли принять оплату за «undefined». Пожалуйста, попробуйте оплатить его снова, или свяжитесь с&nbsp;нашим менеджером по&nbsp;номеру 8&nbsp;800&nbsp;500 26&nbsp;92
+      </div>
+      <div class="payment-page__btn-block"><a href="https://yoomoney.ru/payments/external/confirmation?orderId=28ada05a-000f-5000-8000-158e10067e04" target="_blank" class="payment-page__btn t-b-l s-btn s-btn--c-green s-btn--t-solid"><span class="s-btn__content d-f f-c">Попытаться оплатить снова</span></a></div>
+    </div>
+  </div>
+  <div class="payment-page__bg"></div>
+</div>
+`;
+
+exports[`pages/orders/payment Snapshot при статусе payment = paid 1`] = `
+<div class="payment-page">
+  <div class="payment-page__content container">
+    <div class="payment-page__header">
+      <nuxt-link-stub to="/"><img src="~/assets/svg/logo.svg" alt="logo"></nuxt-link-stub>
+    </div>
+    <!---->
+    <div class="payment-page__body">
+      <div class="payment-page__image-block"><img src="~assets/images/payment-page/card.png" alt="card"></div>
+      <h1 class="payment-page__title h-1">Успешная оплата</h1>
+      <div class="payment-page__description">
+        Спасибо за&nbsp;оплату «undefined» Вы&nbsp;можете приступить к&nbsp;ознакомлению с&nbsp;ним прямо сейчас, нажав на&nbsp;кнопку ниже
+      </div>
+      <div class="payment-page__btn-block"><button class="payment-page__btn t-b-l s-btn s-btn--c-green s-btn--t-solid"><span class="s-btn__content d-f f-c">Перейти к курсу</span></button></div>
+    </div>
+  </div>
+  <div class="payment-page__bg"></div>
+</div>
+`;

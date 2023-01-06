@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@/components/base/app-static-messages Отображается сообщение об заходе под админом и об отсутствии организации 1`] = `
+<div>
+  <div>
+    <div class="s-alert s-alert--info">
+      <evaicon-stub name="info-outline" class="s-alert__icon"></evaicon-stub>
+      <div class="s-alert__message sp-tips">
+        Внимание, вы авторизованы под чужим пользователем!
+      </div>
+      <!---->
+    </div>
+  </div>
+  <div class="static-alert">
+    <div class="company-alert scale-up-ver-top slide-in-top">
+      <div class="s-alert s-alert--warning">
+        <evaicon-stub name="alert-circle-outline" class="s-alert__icon"></evaicon-stub>
+        <div class="s-alert__message sp-tips"><span>
+        Для того, чтобы вам стали доступны все функции сайта, заполните, пожалуйста, сведения об
+        организации.
+        <a href="/user" class="static-alert__link">Заполнить</a></span></div>
+        <evaicon-stub name="close-outline" class="s-alert__close"></evaicon-stub>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`@/components/base/app-static-messages Отображается только сообщение об отсутствии организации 1`] = `
+<div>
+  <!---->
+  <div class="static-alert">
+    <div class="company-alert scale-up-ver-top slide-in-top">
+      <div class="s-alert s-alert--warning">
+        <evaicon-stub name="alert-circle-outline" class="s-alert__icon"></evaicon-stub>
+        <div class="s-alert__message sp-tips"><span>
+        Для того, чтобы вам стали доступны все функции сайта, заполните, пожалуйста, сведения об
+        организации.
+        <a href="/user" class="static-alert__link">Заполнить</a></span></div>
+        <evaicon-stub name="close-outline" class="s-alert__close"></evaicon-stub>
+      </div>
+    </div>
+  </div>
+</div>
+`;

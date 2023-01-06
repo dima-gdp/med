@@ -1,0 +1,30 @@
+.s-tabs {
+  &__nav {
+  }
+  &__nav-list {
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+  }
+  &__nav-item {
+    cursor: pointer;
+    background: #fff;
+    color: $color-main-kiwi-green;
+    padding: 11px 25px;
+    border: 1px solid #94a9b7;
+    &:first-child {
+      border-radius: 28px 0px 0px 28px;
+    }
+    &:last-child {
+      border-radius: 0px 28px 28px 0px;
+    }
+    &--active {
+      background: #0a0a0a;
+      border-color: #0a0a0a;
+      color: #fff;
+    }
+  }
+  &__nav-item + &__nav-item {
+    margin-left: -1px;
+  }
+}

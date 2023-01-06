@@ -1,0 +1,62 @@
+@mixin grid {
+  display: grid;
+  column-gap: 40px;
+  grid-template-columns: repeat(12, minmax(64px, 1fr));
+  @include media-breakpoint-down(xl) {
+    column-gap: 15px;
+    grid-template-columns: repeat(12, minmax(46px, 1fr));
+  }
+  @include media-breakpoint-down(md) {
+    column-gap: 5px;
+    grid-template-columns: repeat(12, minmax(20px, 1fr));
+  }
+}
+
+.grid {
+  @include grid;
+}
+
+@mixin grid-column($start, $end) {
+  grid-column-start: $start;
+  grid-column-end: $end;
+}
+
+@for $start from 1 through 12 {
+  @for $end from ($start + 1) through 13 {
+    .g-c-#{$start}-#{$end} {
+      @include grid-column($start, $end);
+    }
+  }
+}
+
+@for $start from 1 through 12 {
+  @for $end from ($start + 1) through 13 {
+    @each $name, $breakpoints in $grid-breakpoints {
+      .#{$name}-g-c-#{$start}-#{$end} {
+        @include media-breakpoint-only($name) {
+          @include grid-column($start, $end);
+        }
+      }
+    }
+  }
+}
+
+@mixin row-gap($m) {
+  row-gap: 8px * $m;
+}
+
+@for $m from 0 through 12 {
+  .g-rg-#{$m} {
+    @include row-gap($m);
+  }
+}
+
+@for $m from 0 through 12 {
+  @each $name, $breakpoints in $grid-breakpoints {
+    .#{$name}-g-rg-#{$m} {
+      @include media-breakpoint-only($name) {
+        @include row-gap($m);
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@mixin adaptive-style($propertyList, $value, $value-md, $value-xl) {
+  @each $property in $propertyList {
+    #{$property}: $value;
+
+    @if $value-md {
+      @include media-breakpoint-up(md) {
+        #{$property}: $value-md;
+      }
+    }
+
+    @if $value-xl {
+      @include media-breakpoint-up(xl) {
+        #{$property}: $value-xl;
+      }
+    }
+  }
+}

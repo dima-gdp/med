@@ -1,0 +1,28 @@
+config:
+  target: "http://84.201.138.57:8080/stream"
+  payload:
+    path: "./tokens.csv"
+    fields:
+      - "TOKEN"
+  socketio:
+    query:
+      room: "591"
+  phases:
+    - duration: 1000
+      arrivalRate: 5
+scenarios:
+  - engine: "socketio"
+    flow:
+      - emit:
+          channel: "join"
+          data: { room: 591 }
+          response:
+      - think: 1
+      - emit:
+          channel: "message"
+          data: { message: "MjI=", room: 591, parent: null }
+          response:
+      - think: 300
+      - emit:
+          channel: "disconnect"
+          response:

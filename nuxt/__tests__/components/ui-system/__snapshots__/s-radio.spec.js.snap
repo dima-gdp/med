@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ui-system/s-radio/s-radio-button s-radio отображается 1`] = `
+<div class="s-radio-group__item s-radio s-radio--checked">
+  <div class="s-radio__box"><input type="radio" class="s-radio__input" value="1">
+    <div class="s-radio__mask">
+      <div class="s-radio__check"></div>
+    </div>
+  </div> <label class="s-radio__label"></label>
+</div>
+`;

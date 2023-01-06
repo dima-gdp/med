@@ -1,0 +1,51 @@
+.login-page {
+  min-height: 50vh;
+  padding-top: 25px;
+  @include media-breakpoint-up(md) {
+    padding-top: 40px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 65px;
+  }
+  &__title {
+    margin-bottom: 17px;
+  }
+  &__link-block {
+    margin-bottom: 32px;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 18px;
+    }
+  }
+  &__form-block {
+    max-width: 376px;
+    margin-bottom: 40px;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 16px;
+    }
+  }
+  &__forget-link {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 16px;
+    }
+  }
+  &__form-item + &__form-item {
+    margin-top: 24px;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 16px;
+    }
+  }
+  &__bg {
+    background: #f3f7f9;
+    position: fixed;
+    z-index: -1;
+    overflow: hidden;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  &__btn-block {
+    margin-bottom: 75px;
+  }
+}

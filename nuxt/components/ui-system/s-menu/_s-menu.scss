@@ -1,0 +1,107 @@
+.s-menu {
+  display: inline;
+
+  &__icon {
+    position: relative;
+    top: 2px;
+    transition: all 300ms cubic-bezier(0.22, 0.61, 0.35, 1);
+    color: $color-main-kiwi-green;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: normal;
+    margin-left: 1px;
+    @include adaptive-style([ 'font-size' ], 16px, 22px, 26px);
+
+    &--opened {
+      transform: rotate(-180deg);
+      color: $color-status-green-hover;
+    }
+  }
+
+  &__head {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    transition: color 300ms cubic-bezier(0.22, 0.61, 0.35, 1);
+    @include adaptive-style([ 'padding' ], 6px 17px, 6px 19px, 8px 20px);
+
+    &:hover {
+      color: $color-status-green-hover;
+
+      & > .s-menu__icon {
+        color: $color-status-green-hover;
+      }
+    }
+
+    &--opened {
+      color: $color-status-green-hover;
+    }
+  }
+
+  &__content-wrapper {
+    z-index: 100;
+  }
+
+  &__content-pad {
+    background: transparent;
+    height: 0;
+    width: 100%;
+  }
+
+  &__content {
+    z-index: 1000;
+    list-style: none;
+    background: $color-neutral-snow-white;
+    border-radius: 16px;
+    box-shadow: 0 10px 50px rgba(148, 169, 183, 0.25);
+    @include adaptive-style([ 'padding-bottom' ], 8px, 12px, 16px);
+  }
+
+  &__item {
+    &:first-child > .s-menu-item__content {
+      border-radius: 16px 16px 0 0;
+    }
+
+    &:last-child > .s-menu-item__content {
+      border-radius: 0 0 16px 16px;
+    }
+  }
+}
+
+.s-menu-item {
+  cursor: pointer;
+  position: relative;
+
+  &__pad {
+    opacity: 0;
+    @include adaptive-style([ 'padding' ], 0px 17px, 0px 19px, 0px 20px);
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    @include adaptive-style([ 'padding' ], 0px 17px, 0px 19px, 0px 20px);
+
+    width: 100%;
+
+    @include adaptive-style([ 'line-height' ], 40px, 48px, 56px);
+    white-space: nowrap;
+
+    &:hover,
+    &:active {
+      background-color: $color-neutral-pale-grey;
+    }
+
+    & > a {
+      display: block;
+      height: 100%;
+
+      position: relative;
+      width: 100%;
+
+      @include adaptive-style([ 'left' ], -17px, -19px, -26px);
+      @include adaptive-style([ 'padding' ], 0px 17px, 0px 19px, 0px 26px);
+      @include adaptive-style([ 'width' ], calc(100% + 34px), calc(100% + 38px), calc(100% + 52px));
+    }
+  }
+}

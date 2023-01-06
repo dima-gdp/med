@@ -1,0 +1,115 @@
+.h-1 {
+  @include heading-1;
+}
+
+.h-2 {
+  @include heading-2;
+}
+
+.h-3 {
+  @include heading-3;
+}
+.h-4 {
+  @include heading-4;
+}
+.h-5 {
+  @include heading-5;
+}
+.h-6 {
+  @include heading-6;
+}
+
+.t-p {
+  @include text-paragraph;
+}
+
+.t-c {
+  @include text-comment;
+}
+
+.t-b-l {
+  @include text-bold-link;
+}
+
+.t-sp {
+  @include text-special;
+}
+
+.t-menu {
+  @include text-menu;
+}
+
+.t-m-cat {
+  @include text-menu-category;
+}
+
+.t-person {
+  @include text-person;
+}
+
+.t-tag {
+  @include text-tag;
+}
+
+.t-e-m {
+  @include text-error-message;
+}
+
+.t-dropdown-m {
+  @include text-dropdown-menu;
+}
+
+.t-dropdown-m-t {
+  @include text-dropdown-menu-tag;
+}
+
+.sp-h-h {
+  @include special-hero-headline;
+}
+
+.sp-b-h {
+  @include special-big-headline;
+}
+
+.sp-m-h {
+  @include special-micro-headliner;
+}
+
+.sp-m-h-a {
+  @include special-micro-headliner-alternative;
+}
+
+.sp-mammoth {
+  @include special-mammoth;
+}
+
+.sp-tabs {
+  @include special-tabs;
+}
+
+.sp-tips {
+  @include special-tips;
+}
+.o-d {
+  @include outline-digits;
+}
+
+.sp-e-code {
+  @include special-error-code;
+}
+
+.card-data {
+  @include card-date;
+}
+
+.card-data-compress {
+  @include card-date-compress;
+}
+
+.card-timer {
+  @include card-timer;
+}
+
+.card-timer-compress {
+  @include card-timer-compresses;
+}

@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`~/components/common/app-order-card Если тип заказа итерация курса 1`] = `
+<div class="order-card">
+  <div class="order-card__image-block"><img src="~/assets/svg/logo.svg" alt="icon"></div>
+  <div class="order-card__content-block">
+    <div class="order-card__info-block">
+      <div class="order-card__type h-6 color--king-blue"><i class="eva order-card__icon-type eva-globe-2"></i>
+        Онлайн-курс
+      </div>
+      <div class="order-card__status card-timer-compress order-card__status--canceled">
+        отменён
+      </div>
+      <div class="order-card__number color--cool-grey card-data-compress">
+        Заказ №8
+      </div>
+    </div>
+    <h3 class="order-card__title h-4">Недоношенные дети. Итерация #1</h3>
+    <div class="order-card__footer">
+      <div class="order-card__price order-card__price--failed h-3">4500 ₽</div>
+      <div class="order-card__btn-block">
+        <!----> <a href="http://med.s256.xyz/course/nedonosennye-deti" target="_blank" class="t-b-l s-btn s-btn--c-green s-btn--t-ghost s-btn--compressed"><span class="s-btn__content d-f f-c">Подробнее</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`~/components/common/app-order-card Если тип заказа модуль 1`] = `
+<div class="order-card">
+  <div class="order-card__image-block"><img src="~/assets/svg/logo.svg" alt="icon"></div>
+  <div class="order-card__content-block">
+    <div class="order-card__info-block">
+      <div class="order-card__type h-6 color--king-blue"><i class="eva order-card__icon-type eva-monitor-outline"></i>
+        Вебинар
+      </div>
+      <div class="order-card__status card-timer-compress order-card__status--created">
+        не оплачен
+      </div>
+      <div class="order-card__number color--cool-grey card-data-compress">
+        Заказ №17
+      </div>
+    </div>
+    <h3 class="order-card__title h-4">Микронутриенты для поддержки нормальной беременности ИЛИ физиологическая беременность - нужна ли нутрициальная поддержка? Зоны риска</h3>
+    <div class="order-card__footer">
+      <div class="order-card__price order-card__price--failed h-3">12 ₽</div>
+      <div class="order-card__btn-block"><button class="t-b-l s-btn s-btn--c-yellow s-btn--t-solid s-btn--compressed"><span class="s-btn__content d-f f-c"><client-only><i class="eva eva-credit-card-outline s-btn__icon s-btn__icon--left"></i></client-only>Оплатить</span></button> <a href="http://med.s256.xyz/module/mikronutrienty-dla-podderzki-normalnoj-beremennosti" target="_blank" class="t-b-l s-btn s-btn--c-green s-btn--t-ghost s-btn--compressed"><span class="s-btn__content d-f f-c">Подробнее</span></a></div>
+    </div>
+  </div>
+</div>
+`;

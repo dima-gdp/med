@@ -1,0 +1,39 @@
+.align-items-center {
+  display: flex;
+  align-items: center;
+  line-height: initial;
+}
+
+.d-f {
+  display: flex;
+}
+
+.f-c {
+  justify-content: center;
+  align-items: center;
+}
+
+.a-i-c {
+  align-items: center;
+}
+
+.f-s-b {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.f-s-e {
+  justify-content: flex-end;
+}
+
+.f-col {
+  flex-direction: column;
+}
+
+.f-g-1 {
+  width: 100%;
+  flex-grow: 1;
+}

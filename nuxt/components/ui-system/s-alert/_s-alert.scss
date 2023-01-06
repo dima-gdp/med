@@ -1,0 +1,59 @@
+.s-alert {
+  width: 100%;
+  color: $color-neutral-snow-white;
+  display: inline-flex;
+  align-items: center;
+
+  @include adaptive-style([ 'padding' ], 10px 13px 10px 16px, 12px 25px 12px 22px, 15px 30px);
+
+  &--rounded {
+    border-radius: 4px;
+  }
+
+  &--success {
+    background-color: $color-alert-success-green;
+  }
+
+  &--warning {
+    background-color: $color-alert-warning-yellow;
+  }
+
+  &--error {
+    background-color: $color-alert-danger-red;
+  }
+
+  &--info {
+    background-color: $color-alert-system-blue;
+  }
+
+  &__message {
+    width: 100%;
+  }
+
+  &--t-no-icon {
+    @include adaptive-style([ 'padding' ], 5px 10px, 10px 15px, 10px 15px);
+
+    & .s-alert__message {
+      // для t-no-icon
+      padding-right: 10px;
+      @include media-breakpoint-up(sm) {
+        padding-right: 15px;
+      }
+    }
+  }
+
+  &:not(&--t-no-icon) {
+    & .s-alert__message {
+      @include adaptive-style([ 'padding' ], 0 10px, 0 20px, 0 30px 0 28px);
+    }
+  }
+
+  &__icon {
+    @include adaptive-style([ 'font-size' ], 26px, 26px, 30px);
+  }
+
+  &__close {
+    cursor: pointer;
+    font-size: 14px;
+  }
+}

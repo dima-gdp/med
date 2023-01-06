@@ -1,0 +1,19 @@
+@mixin height-mixin($multiplier) {
+  height: 8px * $multiplier;
+}
+
+@for $m from 0 through 12 {
+  .b-h-#{$m} {
+    @include height-mixin($m);
+  }
+}
+
+@for $m from 0 through 12 {
+  @each $name, $breakpoints in $grid-breakpoints {
+    .#{$name}-b-h-#{$m} {
+      @include media-breakpoint-only($name) {
+        @include height-mixin($m);
+      }
+    }
+  }
+}

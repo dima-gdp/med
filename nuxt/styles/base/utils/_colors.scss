@@ -1,0 +1,14 @@
+@each $name, $color in $main-colors {
+  .color--#{$name} {
+    color: $color;
+  }
+  .bg--#{$name} {
+    background-color: $color;
+  }
+}
+
+:root {
+  @each $name, $color in $main-colors {
+    --#{$name}: #{$color};
+  }
+}

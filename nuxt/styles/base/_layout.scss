@@ -1,0 +1,21 @@
+.container {
+  margin: 0 auto;
+  @include adaptive-style([ 'max-width' ], 300px, 716px, 1208px);
+}
+
+.layout {
+  position: relative;
+  min-height: 100vh;
+  background: $color-neutral-pale-grey;
+
+  &--without-bg {
+    background: none;
+  }
+
+  //@include adaptive-style([ 'padding-top' ], 0, 24px, 53px);
+}
+
+.empty-layout {
+  height: 100vh;
+  background: $color-neutral-pale-grey;
+}

@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "strictPropertyInitialization": false,
+    "sourceMap": true,
+  },
+  "types": [
+    "node"
+  ],
+  "include": [
+    "./src"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/data-source/queue/**/*",
+    "src/data-source/config.js"
+  ]
+}

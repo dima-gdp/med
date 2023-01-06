@@ -1,0 +1,21 @@
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+@each $name, $breakpoints in $grid-breakpoints {
+  .#{$name}-d-none {
+    @include media-breakpoint-only($name) {
+      display: none;
+    }
+  }
+
+  .#{$name}-d-block {
+    @include media-breakpoint-only($name) {
+      display: block;
+    }
+  }
+}

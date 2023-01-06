@@ -1,0 +1,7 @@
+.verification-modal {
+  &__text {
+    @include adaptive-style([ 'font-size' ], 14px, 16px, 18px);
+    @include adaptive-style([ 'line-height' ], 22px, 24px, 28px);
+    color: $color-neutral-cobalt-black;
+  }
+}

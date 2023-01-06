@@ -1,0 +1,53 @@
+@import './styles/utility-classes/_height.scss';
+@import './styles/utility-classes/_grid.scss';
+@import './styles/utility-classes/_layout.scss';
+
+// тут полно экспериментов, намешано разных подходов
+.registration-page {
+  padding-top: 25px;
+  @include media-breakpoint-up(md) {
+    padding-top: 40px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 65px;
+  }
+}
+
+.registration-title-block {
+}
+
+@mixin field-inputs {
+  row-gap: 24px;
+  display: grid;
+}
+
+.personal-data {
+  &__inputs {
+    @include field-inputs;
+  }
+}
+
+.contact-data {
+  &__grid {
+    @include field-inputs;
+  }
+  &__verify-phone {
+    margin-bottom: 5px;
+  }
+  &__icon {
+    font-size: 20px;
+    margin-right: 6px;
+  }
+  &__text-info {
+    display: flex;
+  }
+}
+
+.subscribe-data {
+  display: flex;
+
+  &__checkbox {
+    position: relative;
+    @include adaptive-style([ 'top' ], 3px, 4px, 5px);
+  }
+}

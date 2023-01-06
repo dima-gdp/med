@@ -1,0 +1,48 @@
+.s-input-pin {
+  display: flex;
+  align-items: center;
+  &__item {
+    border: 1px solid $color-neutral-cool-grey;
+    border-radius: 500px;
+    @include adaptive-style([ 'width' ], 60px, 80px, 100px);
+    @include adaptive-style([ 'height' ], 40px, 48px, 56px);
+    @include adaptive-style([ 'font-size' ], 22px, 26px, 30px);
+    @include adaptive-style([ 'line-height' ], 26px, 32px, 40px);
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    color: $color-neutral-cobalt-black;
+    padding: 5px;
+    -moz-appearance: textfield;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+    &::placeholder {
+      color: $color-neutral-cool-grey;
+    }
+    &:focus {
+      outline: none;
+      border-color: $color-status-green-hover;
+      color: $color-neutral-cobalt-black;
+    }
+
+    &:disabled {
+      cursor: default;
+      pointer-events: none;
+      background: $color-neutral-ice-grey;
+      border-color: $color-neutral-ice-grey;
+    }
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+  }
+
+  // Инпут compressed
+  &--compressed {
+    .s-input-pin__item {
+      @include adaptive-style([ 'width' ], 60px, 60px, 80px);
+      @include adaptive-style([ 'height' ], 32px, 36px, 40px);
+    }
+  }
+}

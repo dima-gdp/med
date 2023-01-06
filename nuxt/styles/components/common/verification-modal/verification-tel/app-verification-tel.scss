@@ -1,0 +1,36 @@
+.verification-modal-tel {
+  &__text {
+    @include adaptive-style([ 'margin-bottom' ], 16px, 28px, 20px);
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    @include adaptive-style([ 'margin-bottom' ], 17px, 28px, 40px);
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+  }
+
+  &__input {
+    margin-right: 10px;
+    @include media-breakpoint-down(md) {
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
+  }
+  &__verify-btn {
+    display: block;
+    margin: 0 auto;
+    .mobile-hide {
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+  }
+  &__timer {
+    @include adaptive-style([ 'margin-left' ], 7px, 12px, 12px);
+    @include adaptive-style([ 'min-width' ], 40px, 46px, 50px);
+    text-align: center;
+  }
+}

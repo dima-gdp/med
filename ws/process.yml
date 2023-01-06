@@ -1,0 +1,7 @@
+apps:
+  - script   : ./dist/index.js
+    name     : 'ws-app'
+#    instances : 4
+#    exec_mode : cluster
+#  - script : ./dist/data-source/queue/process.js
+#    name   : 'queue'

@@ -1,0 +1,28 @@
+User-agent: *
+
+Disallow: /*utm_source*
+Disallow: /*utm_campaign*
+Disallow: /user/
+Disallow: /admin/
+Disallow: /material/
+Disallow: /action
+
+User-agent: Google
+
+Disallow: /*utm_source*
+Disallow: /*utm_campaign*
+Disallow: /user/
+Disallow: /admin/
+Disallow: /material/
+Disallow: /action
+
+User-agent: Yandex
+
+Disallow: /*utm_source*
+Disallow: /*utm_campaign*
+Disallow: /user/
+Disallow: /admin/
+Disallow: /material/
+Disallow: /action
+
+Host: https://med.studio/

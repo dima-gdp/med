@@ -1,0 +1,39 @@
+.verification-modal-mail {
+  &__text {
+    @include adaptive-style([ 'margin-bottom' ], 27px, 25px, 32px);
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__link {
+    @include adaptive-style([ 'margin-bottom' ], 16px, 14px, 22px);
+    .mobile-hide {
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+  }
+  &__btn-send,
+  &__message {
+    font-weight: 700;
+    @include adaptive-style([ 'font-size' ], 14px, 16px, 18px);
+    @include adaptive-style([ 'line-height' ], 22px, 24px, 28px);
+  }
+  &__btn-send {
+    @include adaptive-style([ 'margin-bottom' ], 11px, 0, 0);
+    background: none;
+    border: none;
+    color: $color-main-kiwi-green;
+    cursor: pointer;
+    &:hover {
+      color: $color-status-green-hover;
+    }
+  }
+  &__message {
+    @include adaptive-style([ 'margin-bottom' ], 11px, 0, 0);
+    color: $color-neutral-cool-grey;
+  }
+}

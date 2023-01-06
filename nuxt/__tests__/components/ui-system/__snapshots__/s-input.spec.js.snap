@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ui-system/s-input s-input отображается 1`] = `
+<div class="s-input"><input autocomplete="off" type="text" name="" placeholder="" class="s-input__input t-p">
+  <!---->
+</div>
+`;
